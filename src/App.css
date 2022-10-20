@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body {
+  background-image: url(care-bg.jpg);
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Philosopher', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.687);
+  height: fit-content;
+  float: left;
+  padding: 25px;
+  margin: 10px;
+  width: 300px;
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  color: rgb(145, 17, 17);
+  font-family: 'Philosopher', sans-serif;
+}
+
+.btn {
+  padding: 10px;
+  background-color: rgba(240, 248, 255, 0.666);
+  width: 70%;
+  margin: 15px;
+  font-weight: 400;
+}
+
+ul, li {
   color: white;
+  list-style: none;
+  font-style: italic;
+  font-size: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.crossed {
+  text-decoration: line-through red solid 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (max-width:850px) {
+  body {
+    background-position:git init bottom;
+}
 }
